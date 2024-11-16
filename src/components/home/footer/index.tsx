@@ -21,7 +21,7 @@ const Footer = () => {
     @media screen and (max-width: 800px) {
       margin-top: 3rem;
     }
-    background-image: url('${bg}');
+    background-image: url('src/assets/home/footer/bg.svg');
       .footer-container {
         max-width: 1440px;
         margin: auto;
