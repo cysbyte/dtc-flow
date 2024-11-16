@@ -1,4 +1,3 @@
-import React from 'react'
 import styled from 'styled-components'
 import logo1 from '@/assets/home/trusted-by/logo1.svg'
 import logo2 from '@/assets/home/trusted-by/logo2.svg'

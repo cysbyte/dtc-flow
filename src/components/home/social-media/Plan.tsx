@@ -1,4 +1,3 @@
-import React from 'react'
 import styled from 'styled-components'
 import radioChecked from '@/assets/home/social-media/radio-checked.svg'
 import radioUnchecked from '@/assets/home/social-media/radio-unchecked.svg'

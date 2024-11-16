@@ -1,4 +1,3 @@
-import React from 'react'
 import styled from 'styled-components'
 import icon1 from '@/assets/home/grow-your-brand/icon1.svg'
 import icon2 from '@/assets/home/grow-your-brand/icon2.svg'

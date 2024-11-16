@@ -1,4 +1,3 @@
-import React from 'react'
 import styled from 'styled-components'
 import logo from '@/assets/home/header/logo.svg'
 import { Link } from 'react-router-dom'

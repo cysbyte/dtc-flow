@@ -1,4 +1,3 @@
-import React from 'react'
 import styled from 'styled-components'
 import left from '@/assets/home/social-media/left2.svg'
 import leftMobile from '@/assets/home/social-media/left-mobile2.svg'

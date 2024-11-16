@@ -1,4 +1,3 @@
-import React from 'react'
 import styled from 'styled-components'
 import hero from '@/assets/home/hero/hero.svg'
 import heroMoblie from '@/assets/home/hero/hero-mobile.svg'

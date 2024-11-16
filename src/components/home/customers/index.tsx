@@ -1,4 +1,3 @@
-import React from 'react'
 import styled from 'styled-components'
 import avatar1 from '@/assets/home/customers/avatar1.svg'
 import avatar2 from '@/assets/home/customers/avatar2.svg'

@@ -1,4 +1,3 @@
-import React from 'react'
 import styled from 'styled-components'
 import right from '@/assets/home/difference/right.svg'
 import rightMobile from '@/assets/home/difference/right-mobile.svg'
