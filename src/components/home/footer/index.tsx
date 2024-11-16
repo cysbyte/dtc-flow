@@ -1,6 +1,5 @@
 import styled from 'styled-components'
 import copyright from '@/assets/home/footer/copyright.svg'
-import bg from '@/assets/home/footer/bg.svg'
 
 const Footer = () => {
   const Wrapper = styled.section`
