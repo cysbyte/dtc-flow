@@ -34,7 +34,7 @@ const Footer = () => {
     background-image: url('${bg}');
     .footer-container {
         max-width: 1440px;
-        height: 100%;
+        height: 98px;
         margin: auto;
         display: flex;
         flex-direction: row;
@@ -42,6 +42,8 @@ const Footer = () => {
         align-items: center;
         padding: 2.5rem 14.5rem 2.5rem 8.5rem;
         @media screen and (max-width: 800px) {
+            max-width: 100%;
+            height: 62px;
             flex-direction: column;
             padding: 1rem 1rem;
             gap: 0.7rem;
