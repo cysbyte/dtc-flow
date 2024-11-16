@@ -1,4 +1,4 @@
-import React, { FC, useState } from "react";
+import { FC, useState } from "react";
 import styled from "styled-components";
 import OpacityOption from "@/components/barrage-setting/opacity-option";
 import SpeedOption from "@/components/barrage-setting/speed-option";
