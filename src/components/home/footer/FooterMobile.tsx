@@ -13,15 +13,17 @@ const FooterMobile = () => {
       top: 0;
       left: 0;
     }
+    max-width: 1440px;
+    height: 98px;
     width: 100%;
     margin-top: 6rem;
     @media screen and (max-width: 800px) {
-      margin-top: 3rem;
+        margin-top: 3rem;
+        max-width: 100%;
+        height: 62px;
     }
     background-image: url('${bg}');
     .footer-container {
-        max-width: 1440px;
-        height: 98px;
         margin: auto;
         display: flex;
         flex-direction: row;
@@ -29,8 +31,6 @@ const FooterMobile = () => {
         align-items: center;
         padding: 2.5rem 14.5rem 2.5rem 8.5rem;
         @media screen and (max-width: 800px) {
-            max-width: 100%;
-            height: 62px;
             flex-direction: column;
             padding: 1rem 1rem;
             gap: 0.7rem;
