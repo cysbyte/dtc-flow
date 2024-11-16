@@ -32,8 +32,9 @@ const Footer = () => {
       margin-top: 3rem;
     }
     background-image: url('${bg}');
-      .footer-container {
+    .footer-container {
         max-width: 1440px;
+        height: 100%;
         margin: auto;
         display: flex;
         flex-direction: row;
