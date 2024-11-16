@@ -7,7 +7,7 @@ const FooterMobile = () => {
     position: relative;
     .bg-img {
       position: absolute;
-      z-index: -1;
+      z-index: 0;
       width: 100%;
       height: 100%;
       top: 0;
@@ -38,6 +38,7 @@ const FooterMobile = () => {
         }
         
         .copyright-box {
+            z-index:10;
           display: flex;
           justify-content: center;
           align-items: center;
@@ -52,6 +53,7 @@ const FooterMobile = () => {
               }
           }
           p {
+            z-index: 10;
             font-family: Ubuntu;
             font-size: 16px;
             font-weight: 400;
@@ -72,6 +74,7 @@ const FooterMobile = () => {
           }
         }
         a {
+         z-index:10;
           font-family: Ubuntu;
           font-size: 16px;
           font-weight: 700;
