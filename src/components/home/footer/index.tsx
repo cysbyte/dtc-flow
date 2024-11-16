@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import copyright from '@/assets/home/footer/copyright.svg'
+import bg from '@/assets/home/footer/bg.svg'
 
 const Footer = () => {
   const Wrapper = styled.section`
@@ -20,7 +21,7 @@ const Footer = () => {
     @media screen and (max-width: 800px) {
       margin-top: 3rem;
     }
-    background-image: url('src/assets/home/footer/bg.svg');
+    background-image: url('${bg}');
       .footer-container {
         max-width: 1440px;
         margin: auto;
