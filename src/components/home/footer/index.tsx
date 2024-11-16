@@ -1,6 +1,4 @@
 import styled from 'styled-components'
-import copyright from '@/assets/home/footer/copyright.svg'
-import bg from '@/assets/home/footer/bg.svg'
 import FooterMobile from './FooterMobile'
 import FooterComponent from './Footer'
 
