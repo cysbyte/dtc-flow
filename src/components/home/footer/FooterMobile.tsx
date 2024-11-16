@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import copyright from '@/assets/home/footer/copyright.svg'
-import bg from '@/assets/home/footer/bg.svg'
+import bgMobile from '@/assets/home/footer/bg-mobile.svg'
 
 const FooterMobile = () => {
     const Wrapper = styled.section`
@@ -22,7 +22,7 @@ const FooterMobile = () => {
         max-width: 100%;
         height: 62px;
     }
-    background-image: url('${bg}');
+    background-image: url('${bgMobile}');
     .footer-container {
         margin: auto;
         display: flex;
@@ -99,7 +99,7 @@ const FooterMobile = () => {
     `
     return (
         <Wrapper>
-            <img className='bg-img' src={bg} alt="" />
+            <img className='bg-img' src={bgMobile} alt="" />
             <div className='footer-container'>
                 <a href="mailto:dtcmatrixsupport1@gmail.com">dtcmatrixsupport1@gmail.com</a>
                 <div className='copyright-box'>
