@@ -9,6 +9,7 @@ const Footer = () => {
       display: block;
       @media screen and (max-width: 800px) {
         display: none;
+        height: 62px;
       }
     }
     .container-mobile {
@@ -16,6 +17,7 @@ const Footer = () => {
       display: none;
       @media screen and (max-width: 800px) {
         display: block;
+        height: 62px;
       }
     }
     .bg-img {
