@@ -4,6 +4,7 @@ import FooterComponent from './Footer'
 
 const Footer = () => {
   const Wrapper = styled.section`
+    width: 100%;
     .container {
       position: relative;
       display: block;

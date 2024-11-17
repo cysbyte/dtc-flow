@@ -7,11 +7,12 @@ const FooterComponent = () => {
     position: relative;
     .bg-img {
       position: absolute;
-      z-index: -1;
+      z-index: 0;
       width: 100%;
       height: 100%;
       top: 0;
       left: 0;
+      object-fit: cover;
     }
     width: 100%;
     margin-top: 6rem;
@@ -24,7 +25,7 @@ const FooterComponent = () => {
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        padding: 2.5rem 14.5rem 2.5rem 8.5rem;
+        padding: 0rem 14.5rem 0rem 8.5rem;
         
         .copyright-box {
           display: flex;
