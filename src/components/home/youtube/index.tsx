@@ -21,7 +21,7 @@ const Youtube = () => {
         margin-top: 5rem;
         gap: 1rem;
         @media screen and (max-width: 800px) {
-            margin-top: 0.4rem;
+            margin-top: 2.5rem;
             gap: 0.5rem;
         }
         
@@ -36,7 +36,13 @@ const Youtube = () => {
             text-decoration-skip-ink: none;
             color: #1A0C84;
             @media screen and (max-width: 800px) {
-                display: none;
+                font-family: Ubuntu;
+                font-size: 20px;
+                font-weight: 700;
+                line-height: 30px;
+                text-align: left;
+                text-underline-position: from-font;
+                text-decoration-skip-ink: none;
             }
         }
         & > p {
@@ -50,7 +56,13 @@ const Youtube = () => {
             text-decoration-skip-ink: none;
             color: #505050;
             @media screen and (max-width: 800px) {
-                display: none;
+                font-family: Inter;
+                font-size: 12px;
+                font-weight: 400;
+                line-height: 16px;
+                text-align: left;
+                text-underline-position: from-font;
+                text-decoration-skip-ink: none;
             }
         }
         .detail-container {
@@ -66,7 +78,7 @@ const Youtube = () => {
             background-color: white;
             @media screen and (max-width: 800px) {
                 padding: 0rem 0.5rem;
-                margin-top: 1rem;
+                margin-top: 0.6rem;
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
@@ -166,8 +178,8 @@ const Youtube = () => {
     `
     return (
         <Wrapper>
-            <h1>Social Media Growth Package</h1>
-            <p>Build Buzz and Attract New Customers on TikTok and Instagram.</p>
+            <h1>YouTube Monetization Accelerator Package</h1>
+            <p>From Zero to Monetized – Reach Your YouTube Goals</p>
             <div className='detail-container'>
                 <div className='back-div'></div>
                 <img className='left-img' src={left} alt="" />

@@ -16,6 +16,7 @@ const Home = () => {
     const Wrapper = styled.main`
         width: 100%;
         overflow: hidden;
+        background-color: white;
         .upper-box {
             background-color: white;
             max-width: 1440px;

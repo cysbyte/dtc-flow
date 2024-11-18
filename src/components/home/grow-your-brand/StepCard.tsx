@@ -18,13 +18,13 @@ const StepCard = ({id, icon, title, desc}: {
         transition: all 0.3s ease-in-out;
         height: auto;
         @media screen and (max-width: 800px){
-            justify-content: space-between;
-            padding: 0.6rem 1rem 0.6rem 0.6rem;
+            justify-content: center;
+            padding: 0.2rem 1rem 1rem 0.6rem;
             border: 1px solid #E6E6E6;
             border-radius: 10px;
             padding-bottom: 1rem;
             height: 133px;
-            gap: 0rem;
+            gap: 0.2rem;
         }
         &:hover {
             box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1); 
@@ -32,7 +32,7 @@ const StepCard = ({id, icon, title, desc}: {
         & > img {
             width: 40px;
             @media screen and (max-width: 800px){
-                width: 20px;
+                width: 28px;
             }
         }
         & > h5 {
@@ -65,7 +65,7 @@ const StepCard = ({id, icon, title, desc}: {
             color: #747582;
             @media screen and (max-width: 800px){
                 font-family: Ubuntu;
-                font-size: 10px;
+                font-size: 12px;
                 font-weight: 400;
                 line-height: 16px;
                 text-align: left;

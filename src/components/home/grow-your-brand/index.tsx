@@ -11,25 +11,25 @@ const GrowYourBrand = () => {
             id: 1,
             icon: icon1,
             title: 'Target Audience',
-            desc: 'Leverage agile framework to provide a robust high level synopsys overviews'
+            desc: 'Share your niche, and our AI will find organic followers who truly engage with your brand!'
         },
         {
             id: 2,
             icon: icon2,
             title: 'Your Content',
-            desc: 'Leverage agile framework to provide a robust high level synopsys overviews'
+            desc: "Create compelling social media content to easily capture your audience's attention!"
         },
         {
             id: 3,
             icon: icon3,
             title: 'AI Delivery',
-            desc: 'Leverage agile framework to provide a robust high level synopsys overviews'
+            desc: "100K+ publishers use DTC Matrix's AI to share content with followers and optimize as our data grows!"
         },
         {
             id: 4,
             icon: icon4,
             title: 'Boost Your Brand Following',
-            desc: 'Leverage agile framework to provide a robust high level synopsys overviews'
+            desc: "Get real, high-quality followers who engage with your content and grow your audience over time!"
         },
     ]
     const Wrapper = styled.section`
@@ -78,17 +78,13 @@ const GrowYourBrand = () => {
             flex-direction: row;
             justify-content: space-between;
             align-items: center;
-            margin-top: 2rem;
+            margin-top: 0rem;
             gap: 2rem;
-            @media screen and (min-width: 800px) and (max-width: 1200px) {
-                gap: 0rem;
-                flex-direction: column;
-            }
+            
             @media screen and (max-width: 800px){
-                display: grid;
-                grid-template-columns: 1fr 1fr;
-                row-gap: 0.6rem;
-                column-gap: 0.6rem;
+                display: flex;
+                flex-direction: column;
+                gap: 0.5rem;
                 margin-top: -1.2rem;
             }
         }

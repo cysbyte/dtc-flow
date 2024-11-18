@@ -9,6 +9,9 @@ const Header = () => {
         justify-content: space-between;
         align-items: center;
         padding: 1.3rem 0rem;
+        @media screen and (max-width: 1080px) {
+            padding: 0.5rem;
+        }
         /*background-color: rgba(255,255,255, 0.9);
         position: sticky;
         top: 0;
@@ -20,7 +23,7 @@ const Header = () => {
         .menu-box {
             flex: 1;
             display: flex;
-            justify-content: center;
+            justify-content: end;
             align-items: center;
             gap: 2.5rem;
             .menu-item {
@@ -101,10 +104,10 @@ const Header = () => {
                 <button className='menu-item' onClick={()=>handleScroll('social-media')} >Pricing</button>
                 <button className='menu-item' onClick={()=>handleScroll('faq')} >FAQ</button>
             </div>
-            <div className='signin-box'>
+            {/* <div className='signin-box'>
                 <button className='signin-button'>Sign In</button>
                 <Link className='start-button' to=''>Start Your Growth</Link>
-            </div>
+            </div> */}
         </Wrapper>
     )
 }

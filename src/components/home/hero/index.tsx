@@ -9,7 +9,7 @@ const Hero = () => {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        align-items: start;
+        align-items: center;
         gap: 0rem;
         margin-top: 3.5rem;
         @media screen and (max-width: 800px) {
@@ -80,18 +80,20 @@ const Hero = () => {
                 text-decoration-skip-ink: none;
                 color: #747582;
                 margin-top: 1rem;
+                letter-spacing: 0.2px;
                 @media screen and (min-width: 800px) and (max-width: 1240px) {
                     font-size: 18px;
                     line-height: 30px;
                 }
                 @media screen and (max-width: 800px) {
                     font-family: Ubuntu;
-                    font-size: 10px;
+                    font-size: 12px;
                     font-weight: 400;
                     line-height: 18px;
                     text-align: left;
                     text-underline-position: from-font;
                     text-decoration-skip-ink: none;
+                    letter-spacing: 0.3px;
                 }
             }
             .supercharge-box {
@@ -184,10 +186,10 @@ const Hero = () => {
                 <h6>Target Audience. Organic Growth. Guaranteed Results.</h6>
                 <p>With AI precision, D2CFlow delivers your social posts directly to the people who matter most—driving consistent growth and amplifying your brand’s impact, one targeted post at a time.</p>
                 <img className='right-img-mobile' src={heroMoblie} alt="" />
-                <div className='supercharge-box'>
+                {/* <div className='supercharge-box'>
                     <button onClick={()=>handleScroll('social-media')}>Supercharge Your Brand!</button>
                     <p>*No Risk Money Back Guarantee </p>
-                </div>
+                </div> */}
             </div>
 
             <img className='right-img' src={hero} alt="" />

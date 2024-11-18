@@ -1,20 +1,21 @@
 import styled from 'styled-components'
 
-const Input = ({title, marginTop}:{title: string, marginTop?: number}) => {
+const Input = ({title, placeholder, marginTop}:
+    {title: string, placeholder: string, marginTop?: number}) => {
     const Wrapper = styled.div`
         width: 100%;
         label {
-            font-family: Ubuntu;
-            font-size: 24px;
+            font-family: Inter;
+            font-size: 16px;
             font-weight: 400;
-            line-height: 36px;
+            line-height: 26px;
             text-align: left;
             text-underline-position: from-font;
             text-decoration-skip-ink: none;
             color: black;
             @media screen and (max-width: 800px) {
                 font-family: Ubuntu;
-                font-size: 14px;
+                font-size: 12px;
                 font-weight: 400;
                 line-height: 16px;
                 text-align: left;
@@ -38,11 +39,30 @@ const Input = ({title, marginTop}:{title: string, marginTop?: number}) => {
         input:focus {
             border-bottom-color: #007BFF;
         }
+        input::placeholder {
+            font-family: Inter;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 24px;
+            text-align: left;
+            text-underline-position: from-font;
+            text-decoration-skip-ink: none;
+            opacity: 70%;
+            @media screen and (max-width: 800px) {
+                font-family: Inter;
+                font-size: 12px;
+                font-weight: 400;
+                line-height: 20px;
+                text-align: left;
+                text-underline-position: from-font;
+                text-decoration-skip-ink: none;
+            }
+        }
     `
   return (
     <Wrapper>
          <label htmlFor="name">{title}</label>
-         <input type="text" />
+         <input type="text" placeholder={placeholder}/>
     </Wrapper>
   )
 }

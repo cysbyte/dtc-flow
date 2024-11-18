@@ -26,6 +26,7 @@ const Subscribe = () => {
                 text-decoration-skip-ink: none;
                 color: #747582;
                 margin-top: 0px;
+                opacity: 80%;
                 @media screen and (max-width: 800px) {
                     font-family: Ubuntu;
                     font-size: 10px;
@@ -131,6 +132,7 @@ const Subscribe = () => {
             margin-top: 0rem;
             @media screen and (max-width: 800px) {
                 font-family: Ubuntu;
+                padding: 0.8rem 1.5rem;
                 font-size: 12px;
                 font-weight: 400;
                 line-height: 13.79px;
@@ -138,8 +140,8 @@ const Subscribe = () => {
                 text-align: center;
                 text-underline-position: from-font;
                 text-decoration-skip-ink: none;
-                margin-top: 1.5rem;
-                margin-bottom: 1.5rem;
+                margin-top: 1.2rem;
+                margin-bottom: 1.2rem;
             }
         }
 
@@ -150,7 +152,7 @@ const Subscribe = () => {
             <p className='price-box'><span>Annual Plan:&nbsp;&nbsp;</span><span>$3999</span><span> 25% OFF </span>&nbsp;&nbsp;<span>$2999</span></p>
             <p className='desc'>If you're not satisfied within the first month, cancel for a full refund – no questions asked.</p>
         </div>
-        <button>Subscribe</button>
+        <button>Contact us</button>
     </Wrapper>
   )
 }

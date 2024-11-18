@@ -16,8 +16,8 @@ const TrustedBy = () => {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 9rem 1rem 0rem 1rem;
-    gap: 1.5rem;
+    margin: 3rem 1rem 0rem 1rem;
+    gap: 2rem;
     @media screen and (max-width: 800px) {
       margin: 3rem 0rem 0rem 0rem;
     }

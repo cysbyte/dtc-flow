@@ -55,7 +55,7 @@ const Why = () => {
             }
             & > p {
                 font-family: Ubuntu;
-                font-size: 18px;
+                font-size: 16px;
                 font-weight: 400;
                 line-height: 27px;
                 text-align: left;
