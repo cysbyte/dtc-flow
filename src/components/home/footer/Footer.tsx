@@ -32,6 +32,7 @@ const FooterComponent = () => {
           justify-content: center;
           align-items: center;
           gap: 0rem;
+          z-index: 10;
           img {
               width: auto;
           }
@@ -56,6 +57,7 @@ const FooterComponent = () => {
           text-decoration-skip-ink: none;
           text-decoration: none;
           color: white;
+          z-index: 10;
         }
       
       }

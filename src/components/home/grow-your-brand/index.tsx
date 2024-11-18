@@ -94,7 +94,7 @@ const GrowYourBrand = () => {
         }
     `
   return (
-    <Wrapper>
+    <Wrapper id='grow-your-brand'>
         <h3>Grow Your Brand In Just 4 Simple Steps</h3>
         <h3>Grow Your Brand<br/> In Just 4 Simple Steps</h3>
         <div className='steps-container'>

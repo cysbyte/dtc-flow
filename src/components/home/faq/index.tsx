@@ -82,7 +82,7 @@ const Faq = () => {
     `
 
     return (
-        <Wrapper>
+        <Wrapper id='faq'>
             <h2>DTC Flow Growth Packages FAQ</h2>
             <div className='list-box'>
                 {

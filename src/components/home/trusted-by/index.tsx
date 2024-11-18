@@ -73,7 +73,7 @@ const TrustedBy = () => {
     }
   `
   return (
-    <Wrapper>
+    <Wrapper id='trusted-by'>
       <h3>Trusted by 100,000+ agencies and influencers, featured at:</h3>
       <div className='logos-container'>
         <img src={logo1} alt="" />

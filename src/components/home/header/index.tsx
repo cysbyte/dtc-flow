@@ -34,6 +34,10 @@ const Header = () => {
                 text-underline-position: from-font;
                 text-decoration-skip-ink: none;
                 text-decoration: none;
+                padding: 0;
+                border: none;
+                background: none;
+                cursor: pointer;
             }
             @media screen and (max-width: 1080px) {
                 display: none;
@@ -53,9 +57,12 @@ const Header = () => {
                 text-underline-position: from-font;
                 text-decoration-skip-ink: none;
                 color: #282C4B;
-                background-color: transparent;
+                padding: 0;
+                border: none;
+                background: none;
                 text-wrap: nowrap;
                 border-width: 0px;
+                cursor: pointer;
             }
             .start-button {
                 border: 1px solid #593FFB;
@@ -76,15 +83,23 @@ const Header = () => {
             }
         }
     `
+
+    const handleScroll = (id: string) => {
+        const section = document.getElementById(id);
+        if (section) {
+          section.scrollIntoView({ behavior: 'smooth' });
+        }
+      }
+
     return (
         <Wrapper>
             <div className='img-box'>
                 <img src={logo} alt="" />
             </div>
             <div className='menu-box'>
-                <Link className='menu-item' to="">How it work</Link>
-                <Link className='menu-item' to="">Pricing</Link>
-                <Link className='menu-item' to="">FAQ</Link>
+                <button className='menu-item' onClick={()=>handleScroll('trusted-by')}>How it work</button>
+                <button className='menu-item' onClick={()=>handleScroll('social-media')} >Pricing</button>
+                <button className='menu-item' onClick={()=>handleScroll('faq')} >FAQ</button>
             </div>
             <div className='signin-box'>
                 <button className='signin-button'>Sign In</button>

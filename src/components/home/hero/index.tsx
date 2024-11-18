@@ -113,6 +113,7 @@ const Hero = () => {
                     text-decoration-skip-ink: none;
                     color: #FFFFFF;
                     text-wrap: nowrap;
+                    cursor: pointer;
                     @media screen and (max-width: 800px) {
                         font-family: Ubuntu;
                         font-size: 12px;
@@ -167,6 +168,13 @@ const Hero = () => {
             }
         }
     `
+    const handleScroll = (id: string) => {
+        const section = document.getElementById(id);
+        if (section) {
+          section.scrollIntoView({ behavior: 'smooth' });
+        }
+      }
+      
     return (
         <Wrapper>
             <div className='left-box'>
@@ -177,7 +185,7 @@ const Hero = () => {
                 <p>With AI precision, D2CFlow delivers your social posts directly to the people who matter most—driving consistent growth and amplifying your brand’s impact, one targeted post at a time.</p>
                 <img className='right-img-mobile' src={heroMoblie} alt="" />
                 <div className='supercharge-box'>
-                    <button>Supercharge Your Brand!</button>
+                    <button onClick={()=>handleScroll('social-media')}>Supercharge Your Brand!</button>
                     <p>*No Risk Money Back Guarantee </p>
                 </div>
             </div>

@@ -176,7 +176,7 @@ const SocialMedia = () => {
         }
     `
     return (
-        <Wrapper>
+        <Wrapper id='social-media'>
             <h1>Social Media Growth Package</h1>
             <p>Build Buzz and Attract New Customers on TikTok and Instagram.</p>
             <div className='detail-container'>
