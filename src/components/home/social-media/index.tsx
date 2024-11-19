@@ -4,8 +4,11 @@ import leftMobile from '@/assets/home/social-media/left-mobile1.svg'
 import check from '@/assets/home/social-media/check.svg'
 import Plan from './Plan'
 import Subscribe from './Subscribe'
+import { useState } from 'react'
 
 const SocialMedia = () => {
+    const [type, setType] = useState('annual')
+
     const list = [
         'Weekly Content Creation & Posting ',
         'Engaging posts on TikTok and Instagram designed to connect with your audience.',
@@ -200,8 +203,8 @@ const SocialMedia = () => {
                         </div>
                     </div>
 
-                    <Plan/>
-                    <Subscribe/>
+                    <Plan type={type} setType={setType}/>
+                    <Subscribe type={type}/>
                 </div>
             </div>
         </Wrapper>

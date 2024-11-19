@@ -79,7 +79,7 @@ const GrowYourBrand = () => {
             justify-content: space-between;
             align-items: center;
             margin-top: 0rem;
-            gap: 2rem;
+            gap: 1.5rem;
             
             @media screen and (max-width: 800px){
                 display: flex;

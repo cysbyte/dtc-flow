@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-const Subscribe = () => {
+const Subscribe = ({ type }: { type: string }) => {
     const Wrapper = styled.div`
         width: 100%;
         display: flex;
@@ -130,6 +130,8 @@ const Subscribe = () => {
             text-decoration-skip-ink: none;
             color: #FFFFFF;
             margin-top: 0rem;
+            text-wrap: nowrap;
+            cursor: pointer;
             @media screen and (max-width: 800px) {
                 font-family: Ubuntu;
                 padding: 0.8rem 1.5rem;
@@ -142,19 +144,32 @@ const Subscribe = () => {
                 text-decoration-skip-ink: none;
                 margin-top: 1rem;
                 margin-bottom: 1rem;
+                text-wrap: nowrap;
+                cursor: pointer;
             }
         }
 
     `
-  return (
-    <Wrapper>
-        <div className='left-box'>
-        <p className='price-box'><span>Annual Plan: </span><span>$2999</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>$3999</span></p>
-            <p className='desc'>If you're not satisfied within the first month, cancel for a full refund – no questions asked.</p>
-        </div>
-        <button>Contact us</button>
-    </Wrapper>
-  )
+
+    const handleContactus = () => {
+        const section = document.getElementById('contact-us');
+        if (section) {
+            section.scrollIntoView({ behavior: 'smooth' });
+        }
+    }
+
+    return (
+        <Wrapper>
+            <div className='left-box'>
+                {type === 'annual'
+                    && <p className='price-box'><span>Annual Plan: </span><span>$2999</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>$3999</span></p>}
+                {type === 'quarter'
+                    && <p className='price-box'><span>Quarterly Plan: </span><span></span><span></span><span>$999</span></p>}
+                <p className='desc'>If you're not satisfied within the first month, cancel for a full refund – no questions asked.</p>
+            </div>
+            <button onClick={handleContactus}>Contact us</button>
+        </Wrapper>
+    )
 }
 
 export default Subscribe

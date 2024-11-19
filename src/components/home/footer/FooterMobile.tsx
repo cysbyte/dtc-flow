@@ -102,7 +102,7 @@ const FooterMobile = () => {
         <Wrapper>
             <img className='bg-img' src={bgMobile} alt="" />
             <div className='footer-container'>
-                <a href="mailto:D2Cmatrixsupport1@gmail.com">D2Cmatrixsupport1@gmail.com</a>
+                <a href="mailto:market@d2cflow.net">market@d2cflow.netm</a>
                 <div className='copyright-box'>
                     <img src={copyright} alt="" />
                     <p>Alphabytes PTE, Ltd | All rights reserved - 2022</p>

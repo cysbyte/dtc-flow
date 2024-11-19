@@ -105,7 +105,7 @@ const Contact = () => {
             }
     `
     return (
-        <Wrapper>
+        <Wrapper id='contact-us'>
             <h2>Contact Us</h2>
             <p>Our customer support will contact you within 24 hours</p>
             <div className='inputs-box'>

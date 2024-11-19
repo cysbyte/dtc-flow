@@ -1,8 +1,14 @@
 import styled from 'styled-components'
 import radioChecked from '@/assets/home/social-media/radio-checked.svg'
 import radioUnchecked from '@/assets/home/social-media/radio-unchecked.svg'
+import { useState } from 'react'
 
-const Plan = () => {
+interface PlanProps {
+    type: string;
+    setType: React.Dispatch<React.SetStateAction<string>>;
+}
+
+const Plan = (props: PlanProps) => {
     const Wrapper = styled.div`
         display: flex;
         flex-direction: column;
@@ -143,16 +149,16 @@ const Plan = () => {
         <Wrapper>
             <h5>Select your plan</h5>
             <div className='buttons-container'>
-                <div className='left-button'>
+                <div className='left-button' onClick={()=>props.setType('annual')}>
                     <div className='annual-box'>
-                        <img src={radioChecked} alt="" />
+                        <img src={props.type==='annual'?radioChecked:radioUnchecked} alt="" />
                         <p>Annual</p>
                     </div>
                     <p className='best-value'>Best Value</p>
                 </div>
-                <div className='right-button'>
+                <div className='right-button' onClick={()=>props.setType('quarter')}>
                     <div className='annual-box'>
-                        <img src={radioUnchecked} alt="" />
+                        <img src={props.type==='quarter'?radioChecked:radioUnchecked} alt="" />
                         <p>Quarterly</p>
                     </div>
                 </div>

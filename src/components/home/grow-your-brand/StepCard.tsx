@@ -12,7 +12,7 @@ const StepCard = ({id, icon, title, desc}: {
         justify-content: center;
         align-items: left;
         gap: 1.3rem;
-        padding: 2rem 3rem 2rem 1rem;
+        padding: 2rem 1rem 2rem 1rem;
         border: 1px solid white;
         border-radius: 3px;
         transition: all 0.3s ease-in-out;

@@ -68,9 +68,9 @@ const FooterComponent = () => {
         <div className='footer-container'>
           <div className='copyright-box'>
             <img src={copyright} alt="" />
-            <p>DTC MATRIX | All rights reserved - 2022</p>
+            <p>Alphabytes PTE, Ltd | All rights reserved - 2022</p>
           </div>
-          <a href="mailto:dtcmatrixsupport1@gmail.com">dtcmatrixsupport1@gmail.com</a>
+          <a href="mailto:market@d2cflow.net">market@d2cflow.net</a>
         </div>
     </Wrapper>
   )

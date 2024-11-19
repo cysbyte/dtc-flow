@@ -4,8 +4,11 @@ import leftMobile from '@/assets/home/social-media/left-mobile2.svg'
 import check from '@/assets/home/social-media/check.svg'
 import Plan from '../social-media/Plan'
 import Subscribe from './Subscribe'
+import { useState } from 'react'
 
 const Youtube = () => {
+    const [type, setType] = useState('annual')
+
     const list = [
         'Expert Video Strategy Consultation – Plan and produce the right content to reach your channel’s unique audience.',
         'AI-Driven SEO Optimization – Get your videos found more easily with powerful SEO tools.',
@@ -201,8 +204,8 @@ const Youtube = () => {
                         </div>
                     </div>
 
-                    <Plan/>
-                    <Subscribe/>
+                    <Plan type={type} setType={setType}/>
+                    <Subscribe type={type}/>
                 </div>
             </div>
         </Wrapper>
