@@ -60,17 +60,16 @@ const Subscribe = ({ type }: { type: string }) => {
                 & > span:nth-child(2) {
                     font-family: Ubuntu;
                     font-size: 18px;
-                    font-weight: 400;
+                    font-weight: 700;
                     line-height: 27px;
                     text-align: left;
-                    text-decoration-line: line-through;
                     text-underline-position: from-font;
                     text-decoration-skip-ink: none;
-                    opacity: 50%;
+
                     @media screen and (max-width: 800px) {
                         font-family: Ubuntu;
                         font-size: 16px;
-                        font-weight: 400;
+                        font-weight: 700;
                         line-height: 16px;
                         text-align: left;
                         text-underline-position: from-font;
@@ -98,11 +97,13 @@ const Subscribe = ({ type }: { type: string }) => {
                 & > span:nth-child(4) {
                     font-family: Ubuntu;
                     font-size: 18px;
-                    font-weight: 700;
+                    font-weight: 400;
                     line-height: 27px;
                     text-align: left;
+                    text-decoration-line: line-through;
                     text-underline-position: from-font;
                     text-decoration-skip-ink: none;
+                    opacity: 0.5;
                     @media screen and (max-width: 800px) {
                         font-family: Ubuntu;
                         font-size: 16px;
@@ -160,9 +161,9 @@ const Subscribe = ({ type }: { type: string }) => {
         <Wrapper>
             <div className='left-box'>
                 {type === 'annual' &&
-                    <p className='price-box'><span>Annual Plan:&nbsp;&nbsp;</span><span>$3999</span><span> 25% OFF </span>&nbsp;&nbsp;<span>$2999</span></p>}
+                    <p className='price-box'><span>Annual Plan:&nbsp;</span><span>$2999</span><span> 25% OFF </span>&nbsp;&nbsp;<span>$3999</span></p>}
                 {type === 'quarter' &&
-                    <p className='price-box'><span>Quarterly Plan:</span><span></span><span> </span><span>$999</span></p>}
+                    <p className='price-box'><span>Quarterly Plan:</span><span>&nbsp;$999</span><span> </span><span></span></p>}
                 <p className='desc'>If you're not satisfied within the first month, cancel for a full refund – no questions asked.</p>
             </div>
             <button onClick={handleContactus}>Contact us</button>

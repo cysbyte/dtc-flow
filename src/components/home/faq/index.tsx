@@ -2,37 +2,37 @@ import styled from 'styled-components'
 import FaqItem from './FaqItem'
 
 const Faq = () => {
-    const answer = `Unlike Social Media "growth tools", we don't ask for your account password and we don't use any automation or mass following to get you followers and engagement. We only use organic promotion using our proprietary AI targeting platform, so there's no risk to your account. We're a digital marketing agency and a team of strategiests who promote your profile organically through our AI platform.`
+    
     const data = [
         {
             id: 1,
             question: "What services does DTCFlow offer in its growth packages?",
-            answer: answer,
+            answer: "D2CFlow provides tailored social media and YouTube growth solutions. Our packages include content creation, engagement optimization, and targeted strategies designed to grow your audience and enhance engagement on platforms like Instagram, TikTok, and YouTube.",
         },
         {
             id: 2,
             question: "How does DTCFlow ensure real engagement and audience growth?",
-            answer: answer,
+            answer: "We use a combination of expert strategy, AI-driven tools, and advanced analytics to ensure your content reaches a relevant and engaged audience. Our approach is focused on organic growth, helping you connect with real users interested in your content or brand",
         },
         {
             id: 3,
             question: "What is the refund policy for DTCFlow packages?",
-            answer: answer,
+            answer: "If you’re not satisfied with the results after the first month, you can cancel your package and receive a full refund. This policy applies to all our plans, both quarterly and annual.",
         },
         {
             id: 4,
             question: "What can I expect from the AI-powered tools included in the packages?",
-            answer: answer,
+            answer: "Our AI-driven tools assist with optimizing your content for search and engagement. This includes SEO enhancements for video content, strategic post timing, and audience analysis, ensuring your content is discoverable and highly engaging for the intended audience.",
         },
         {
             id: 5,
             question: "Who are these growth packages best suited for?",
-            answer: answer,
+            answer: "Our packages are ideal for creators, brands, and businesses looking to expand their social presence, increase engagement, and reach new audiences. Whether you're an aspiring YouTuber aiming for monetization or a brand targeting growth on Instagram and TikTok, D2CFlow offers tools and strategies to meet your goals.",
         },
         {
             id: 6,
             question: "Why should I choose DTCFlow over other growth services?",
-            answer: answer,
+            answer: "D2CFlow’s focus on organic, data-driven growth and personalized support sets us apart. We partner with our clients every step of the way, offering not just services but a genuine growth partnership that aims to drive measurable results and build a sustainable online presence.",
         },
     ]
 

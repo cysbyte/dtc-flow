@@ -35,7 +35,7 @@ const Plan = (props: PlanProps) => {
             }
         }
         .buttons-container {
-            padding: 1rem 0rem;
+            padding: 0.8rem 0rem 1.2rem 0rem;
             border-bottom: 1px solid #E7E7E7;
             display: flex;
             justify-content: start;

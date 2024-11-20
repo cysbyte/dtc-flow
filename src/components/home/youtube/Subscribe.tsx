@@ -162,7 +162,7 @@ const Subscribe = ({ type }: { type: string }) => {
         <Wrapper>
             <div className='left-box'>
                 {type === 'annual'
-                    && <p className='price-box'><span>Annual Plan: </span><span>$2999</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>$3999</span></p>}
+                    && <p className='price-box'><span>Annual Plan: </span><span>$2999</span><span>&nbsp;&nbsp;25% OFF</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>$3999</span></p>}
                 {type === 'quarter'
                     && <p className='price-box'><span>Quarterly Plan: </span><span></span><span></span><span>$999</span></p>}
                 <p className='desc'>If you're not satisfied within the first month, cancel for a full refund – no questions asked.</p>

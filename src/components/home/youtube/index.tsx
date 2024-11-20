@@ -3,8 +3,9 @@ import left from '@/assets/home/social-media/left2.svg'
 import leftMobile from '@/assets/home/social-media/left-mobile2.svg'
 import check from '@/assets/home/social-media/check.svg'
 import Plan from '../social-media/Plan'
-import Subscribe from './Subscribe'
+
 import { useState } from 'react'
+import Subscribe from '../social-media/Subscribe'
 
 const Youtube = () => {
     const [type, setType] = useState('annual')
