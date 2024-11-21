@@ -186,10 +186,10 @@ const Hero = () => {
                 <h6>Target Audience. Organic Growth. Guaranteed Results.</h6>
                 <p>With AI precision, D2CFlow delivers your social posts directly to the people who matter most—driving consistent growth and amplifying your brand’s impact, one targeted post at a time.</p>
                 <img className='right-img-mobile' src={heroMoblie} alt="" />
-                {/* <div className='supercharge-box'>
+                <div className='supercharge-box'>
                     <button onClick={()=>handleScroll('social-media')}>Supercharge Your Brand!</button>
                     <p>*No Risk Money Back Guarantee </p>
-                </div> */}
+                </div>
             </div>
 
             <img className='right-img' src={hero} alt="" />

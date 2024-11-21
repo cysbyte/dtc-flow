@@ -104,10 +104,10 @@ const Header = () => {
                 <button className='menu-item' onClick={()=>handleScroll('social-media')} >Pricing</button>
                 <button className='menu-item' onClick={()=>handleScroll('faq')} >FAQ</button>
             </div>
-            {/* <div className='signin-box'>
+            <div className='signin-box'>
                 <button className='signin-button'>Sign In</button>
                 <Link className='start-button' to=''>Start Your Growth</Link>
-            </div> */}
+            </div>
         </Wrapper>
     )
 }

@@ -1,7 +1,6 @@
 import styled from 'styled-components'
 import radioChecked from '@/assets/home/social-media/radio-checked.svg'
 import radioUnchecked from '@/assets/home/social-media/radio-unchecked.svg'
-import { useState } from 'react'
 
 interface PlanProps {
     type: string;
