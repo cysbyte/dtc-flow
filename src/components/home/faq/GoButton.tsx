@@ -38,7 +38,7 @@ const GoButton: FC<GoButtonProps> = ({ selected, setSelected }) => {
         }
     `;
     const handleClick = () => {
-        setSelected(!selected);
+        setSelected((prev)=>!prev);
     };
 
     return (
