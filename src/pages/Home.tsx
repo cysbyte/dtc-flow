@@ -12,23 +12,23 @@ import Youtube from '@/components/home/youtube'
 import styled from 'styled-components'
 import Footer from '@/components/home/footer'
 
-const Home = () => {
-    const Wrapper = styled.main`
-        width: 100%;
-        overflow: hidden;
+const Wrapper = styled.main`
+    width: 100%;
+    overflow: hidden;
+    background-color: white;
+    .upper-box {
         background-color: white;
-        .upper-box {
-            background-color: white;
-            max-width: 1440px;
-            margin: auto auto;
-            padding: 0 8.5rem;
-            @media screen and (max-width: 800px) {
-                padding: 0rem 1rem;
-                overflow: hidden;
-            }
+        max-width: 1440px;
+        margin: auto auto;
+        padding: 0 8.5rem;
+        @media screen and (max-width: 800px) {
+            padding: 0rem 1rem;
+            overflow: hidden;
         }
-       
-    `
+    }
+   
+`
+const Home = () => {
     return (
         <Wrapper>
             <div className='upper-box'>

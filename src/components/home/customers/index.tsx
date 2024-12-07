@@ -6,6 +6,85 @@ import avatar4 from '@/assets/home/customers/avatar4.svg'
 import CustomerCard from './CustomerCard'
 import CustomerCardMobile from './CustomCardMobile'
 
+const Wrapper = styled.section`
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 5.2rem;
+    @media screen and (max-width: 800px) {
+        margin-top: 2rem;
+    }
+    
+    & > h2 {
+        font-family: Ubuntu;
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 53px;
+        letter-spacing: 0.02em;
+        text-align: center;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        color: #1A0C84;
+        @media screen and (max-width: 800px) {
+            font-family: Ubuntu;
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 30px;
+            text-align: left;
+            text-underline-position: from-font;
+            text-decoration-skip-ink: none;
+            width: 100%;
+        }
+    }
+    .container {
+        display: block;
+        @media screen and (max-width: 800px) {
+            display: none;
+        }
+        .list-container {
+            margin-top: 2rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            row-gap: 4rem;
+            column-gap: 14rem;
+            @media screen and (max-width: 800px) {
+                width: 1296px;
+                display: flex;
+                justify-content: between;
+                align-items: center;
+                gap: 1rem;
+                overflow: scroll;
+            }
+        }
+    }
+
+    .container-mobile {
+        display: none;
+        width: 100%;
+        overflow: auto;
+        @media screen and (max-width: 800px) {
+            display: block;
+        }
+        margin-top: -2.2rem;
+        .list-container {
+            width: 1300px;
+            display: flex;
+            justify-content: between;
+            align-items: center;
+            gap: 0.8rem;
+            overflow: scroll;
+            padding: 1rem 1rem;
+            /* Hide scrollbar for Webkit browsers */
+            &::-webkit-scrollbar {
+                display: none;
+            }
+            /* Hide scrollbar for other browsers (Firefox) */
+            scrollbar-width: none; /* For Firefox */
+        }
+    }
+`
 const Customers = () => {
     const data = [
         {
@@ -38,85 +117,6 @@ const Customers = () => {
         },
 
     ]
-    const Wrapper = styled.section`
-        display: flex;
-        flex-direction: column;
-        justify-content: start;
-        align-items: center;
-        gap: 2rem;
-        margin-top: 5.2rem;
-        @media screen and (max-width: 800px) {
-            margin-top: 2rem;
-        }
-        
-        & > h2 {
-            font-family: Ubuntu;
-            font-size: 40px;
-            font-weight: 700;
-            line-height: 53px;
-            letter-spacing: 0.02em;
-            text-align: center;
-            text-underline-position: from-font;
-            text-decoration-skip-ink: none;
-            color: #1A0C84;
-            @media screen and (max-width: 800px) {
-                font-family: Ubuntu;
-                font-size: 20px;
-                font-weight: 700;
-                line-height: 30px;
-                text-align: left;
-                text-underline-position: from-font;
-                text-decoration-skip-ink: none;
-                width: 100%;
-            }
-        }
-        .container {
-            display: block;
-            @media screen and (max-width: 800px) {
-                display: none;
-            }
-            .list-container {
-                margin-top: 2rem;
-                display: grid;
-                grid-template-columns: 1fr 1fr;
-                row-gap: 4rem;
-                column-gap: 14rem;
-                @media screen and (max-width: 800px) {
-                    width: 1296px;
-                    display: flex;
-                    justify-content: between;
-                    align-items: center;
-                    gap: 1rem;
-                    overflow: scroll;
-                }
-            }
-        }
-
-        .container-mobile {
-            display: none;
-            width: 100%;
-            overflow: auto;
-            @media screen and (max-width: 800px) {
-                display: block;
-            }
-            margin-top: -2.2rem;
-            .list-container {
-                width: 1300px;
-                display: flex;
-                justify-content: between;
-                align-items: center;
-                gap: 0.8rem;
-                overflow: scroll;
-                padding: 1rem 1rem;
-                /* Hide scrollbar for Webkit browsers */
-                &::-webkit-scrollbar {
-                    display: none;
-                }
-                /* Hide scrollbar for other browsers (Firefox) */
-                scrollbar-width: none; /* For Firefox */
-            }
-        }
-    `
     return (
         <Wrapper>
             <h2>Real Customers. Real Results.</h2>

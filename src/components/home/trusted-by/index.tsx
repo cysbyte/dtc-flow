@@ -10,68 +10,68 @@ import logoMobile3 from '@/assets/home/trusted-by/logo-mobile3.svg'
 import logoMobile4 from '@/assets/home/trusted-by/logo-mobile4.svg'
 import logoMobile5 from '@/assets/home/trusted-by/logo-mobile5.svg'
 
-const TrustedBy = () => {
-  const Wrapper = styled.section`
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 3rem 1rem 0rem 1rem;
-    gap: 2rem;
+const Wrapper = styled.section`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem 1rem 0rem 1rem;
+  gap: 2rem;
+  @media screen and (max-width: 800px) {
+    margin: 3rem 0rem 0rem 0rem;
+  }
+  & > h3 {
+    font-family: Ubuntu;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 36px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #1A0C84;
+    margin: 0rem 1rem;
     @media screen and (max-width: 800px) {
-      margin: 3rem 0rem 0rem 0rem;
+        font-family: Ubuntu;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+        text-align: center;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
     }
-    & > h3 {
-      font-family: Ubuntu;
-      font-size: 20px;
-      font-weight: 500;
-      line-height: 36px;
-      text-align: left;
-      text-underline-position: from-font;
-      text-decoration-skip-ink: none;
-      color: #1A0C84;
-      margin: 0rem 1rem;
-      @media screen and (max-width: 800px) {
-          font-family: Ubuntu;
-          font-size: 16px;
-          font-weight: 500;
-          line-height: 24px;
-          text-align: center;
-          text-underline-position: from-font;
-          text-decoration-skip-ink: none;
-      }
+  }
+  .logos-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    @media screen and (max-width: 1210px) {
+        justify-content: center;
+        gap: 2rem;
     }
-    .logos-container {
+    @media screen and (min-width: 800px) and (max-width:1210px){
+        display: none;
+        gap: 2rem;
+    }
+    @media screen and (max-width: 800px) and (max-width:1210px){
+        display: none;
+    }
+  }
+  .logos-container-mobile {
+    display: none;
+    
+    @media screen and (max-width: 800px) {
       display: flex;
       flex-wrap: wrap;
-      justify-content: space-between;
+      justify-content: center;
       align-items: center;
       width: 100%;
-      @media screen and (max-width: 1210px) {
-          justify-content: center;
-          gap: 2rem;
-      }
-      @media screen and (min-width: 800px) and (max-width:1210px){
-          display: none;
-          gap: 2rem;
-      }
-      @media screen and (max-width: 800px) and (max-width:1210px){
-          display: none;
-      }
+      gap: 1rem;
     }
-    .logos-container-mobile {
-      display: none;
-      
-      @media screen and (max-width: 800px) {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        gap: 1rem;
-      }
-    }
-  `
+  }
+`
+const TrustedBy = () => {
   return (
     <Wrapper id='trusted-by'>
       <h3>Trusted by 100,000+ agencies and influencers, featured at:</h3>

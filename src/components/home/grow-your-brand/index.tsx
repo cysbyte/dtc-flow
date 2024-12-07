@@ -5,6 +5,63 @@ import icon3 from '@/assets/home/grow-your-brand/icon3.svg'
 import icon4 from '@/assets/home/grow-your-brand/icon4.svg'
 import StepCard from './StepCard'
 
+const Wrapper = styled.section`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5.5rem;
+    gap: 2.5rem;
+    @media screen and (max-width: 800px) {
+        margin-top: 3.5rem;
+    }
+    & > h3:nth-child(1) {
+        display: block;
+        font-family: Ubuntu;
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 53px;
+        letter-spacing: 0.02em;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        color: #1A0C84;
+        @media screen and (max-width: 800px) {
+            display: none;
+        }
+    }
+    & > h3:nth-child(2) {
+        display: none;
+        font-family: Ubuntu;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 30px;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        color: #1A0C84;
+        width: 100%;
+        @media screen and (max-width: 1200px) {
+            display: block;
+        }
+    }
+    .steps-container {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 0rem;
+        gap: 1.5rem;
+        
+        @media screen and (max-width: 800px){
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            margin-top: -1.2rem;
+        }
+    }
+`
 const GrowYourBrand = () => {
     const data = [
         {
@@ -32,63 +89,6 @@ const GrowYourBrand = () => {
             desc: "Get real, high-quality followers who engage with your content and grow your audience over time!"
         },
     ]
-    const Wrapper = styled.section`
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-top: 5.5rem;
-        gap: 2.5rem;
-        @media screen and (max-width: 800px) {
-            margin-top: 3.5rem;
-        }
-        & > h3:nth-child(1) {
-            display: block;
-            font-family: Ubuntu;
-            font-size: 40px;
-            font-weight: 700;
-            line-height: 53px;
-            letter-spacing: 0.02em;
-            text-align: left;
-            text-underline-position: from-font;
-            text-decoration-skip-ink: none;
-            color: #1A0C84;
-            @media screen and (max-width: 800px) {
-                display: none;
-            }
-        }
-        & > h3:nth-child(2) {
-            display: none;
-            font-family: Ubuntu;
-            font-size: 20px;
-            font-weight: 700;
-            line-height: 30px;
-            text-align: left;
-            text-underline-position: from-font;
-            text-decoration-skip-ink: none;
-            color: #1A0C84;
-            width: 100%;
-            @media screen and (max-width: 1200px) {
-                display: block;
-            }
-        }
-        .steps-container {
-            width: 100%;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            align-items: center;
-            margin-top: 0rem;
-            gap: 1.5rem;
-            
-            @media screen and (max-width: 800px){
-                display: flex;
-                flex-direction: column;
-                gap: 0.5rem;
-                margin-top: -1.2rem;
-            }
-        }
-    `
   return (
     <Wrapper id='grow-your-brand'>
         <h3>Grow Your Brand In Just 4 Simple Steps</h3>

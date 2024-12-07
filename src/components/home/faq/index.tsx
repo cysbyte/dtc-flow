@@ -1,6 +1,50 @@
 import styled from 'styled-components'
 import FaqItem from './FaqItem'
 
+const Wrapper = styled.section`
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 6rem;
+    @media screen and (max-width: 800px) {
+        margin-top: 2rem;
+    }
+    & > h2 {
+        font-family: Ubuntu;
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 53px;
+        letter-spacing: 0.02em;
+        text-align: center;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        color: #1A0C84;
+        @media screen and (max-width: 800px) {
+            font-family: Ubuntu;
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 30px;
+            text-align: left;
+            text-underline-position: from-font;
+            text-decoration-skip-ink: none;
+            width: 100%;
+        }
+    }
+    .list-box {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
+        margin-top: 2rem;
+        @media screen and (max-width: 800px) {
+            margin-top: 1rem;
+            gap: 0.5rem;
+        }
+    }
+`
 const Faq = () => {
     
     const data = [
@@ -36,50 +80,6 @@ const Faq = () => {
         },
     ]
 
-    const Wrapper = styled.section`
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        margin-top: 6rem;
-        @media screen and (max-width: 800px) {
-            margin-top: 2rem;
-        }
-        & > h2 {
-            font-family: Ubuntu;
-            font-size: 40px;
-            font-weight: 700;
-            line-height: 53px;
-            letter-spacing: 0.02em;
-            text-align: center;
-            text-underline-position: from-font;
-            text-decoration-skip-ink: none;
-            color: #1A0C84;
-            @media screen and (max-width: 800px) {
-                font-family: Ubuntu;
-                font-size: 20px;
-                font-weight: 700;
-                line-height: 30px;
-                text-align: left;
-                text-underline-position: from-font;
-                text-decoration-skip-ink: none;
-                width: 100%;
-            }
-        }
-        .list-box {
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            align-items: center;
-            gap: 1rem;
-            margin-top: 2rem;
-            @media screen and (max-width: 800px) {
-                margin-top: 1rem;
-                gap: 0.5rem;
-            }
-        }
-    `
 
     return (
         <Wrapper id='faq'>

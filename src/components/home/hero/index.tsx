@@ -4,172 +4,172 @@ import heroMoblie from '@/assets/home/hero/hero-mobile.svg'
 import heroText from '@/assets/home/hero/hero-text.svg'
 import heroTextMobile from '@/assets/home/hero/hero-text-mobile.svg'
 
-const Hero = () => {
-    const Wrapper = styled.section`
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+const Wrapper = styled.section`
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0rem;
+    margin-top: 3.5rem;
+    @media screen and (max-width: 800px) {
+        flex-direction: column;
         align-items: center;
-        gap: 0rem;
-        margin-top: 3.5rem;
+        width: 100%;
+        align-items: start;
+        margin-top: 2rem;
+    }
+    
+    .left-box {
+        width: 50%;
         @media screen and (max-width: 800px) {
-            flex-direction: column;
-            align-items: center;
             width: 100%;
-            align-items: start;
-            margin-top: 2rem;
         }
-        
-        .left-box {
-            width: 50%;
+        .hero-text {
+            width: auto;
+            display: block;
             @media screen and (max-width: 800px) {
-                width: 100%;
-            }
-            .hero-text {
-                width: auto;
-                display: block;
-                @media screen and (max-width: 800px) {
-                    display: none;
-                }
-            }
-            .hero-text-mobile {
-                width: auto;
                 display: none;
-                @media screen and (max-width: 800px) {
-                    display: block;
-                }
             }
-            & > h1 {
+        }
+        .hero-text-mobile {
+            width: auto;
+            display: none;
+            @media screen and (max-width: 800px) {
+                display: block;
+            }
+        }
+        & > h1 {
+            font-family: Ubuntu;
+            font-size: 58px;
+            font-weight: 700;
+            line-height: 80px;
+            letter-spacing: 0.02em;
+            text-align: left;
+            text-underline-position: from-font;
+            text-decoration-skip-ink: none;
+            color: #282C4B;
+        }
+        & > h6 {
+            font-family: Ubuntu;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 18.38px;
+            text-align: left;
+            text-underline-position: from-font;
+            text-decoration-skip-ink: none;
+            color: #1A0C84;
+            margin-top: 1rem;
+            @media screen and (max-width: 800px) {
                 font-family: Ubuntu;
-                font-size: 58px;
-                font-weight: 700;
-                line-height: 80px;
-                letter-spacing: 0.02em;
+                font-size: 12px;
+                font-weight: 500;
+                line-height: 13.79px;
                 text-align: left;
                 text-underline-position: from-font;
                 text-decoration-skip-ink: none;
-                color: #282C4B;
             }
-            & > h6 {
+        }
+        & > p {
+            font-family: Ubuntu;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 36px;
+            text-align: left;
+            text-underline-position: from-font;
+            text-decoration-skip-ink: none;
+            color: #747582;
+            margin-top: 1rem;
+            letter-spacing: 0.2px;
+            @media screen and (min-width: 800px) and (max-width: 1240px) {
+                font-size: 18px;
+                line-height: 30px;
+            }
+            @media screen and (max-width: 800px) {
+                font-family: Ubuntu;
+                font-size: 12px;
+                font-weight: 400;
+                line-height: 18px;
+                text-align: left;
+                text-underline-position: from-font;
+                text-decoration-skip-ink: none;
+                letter-spacing: 0.3px;
+            }
+        }
+        .supercharge-box {
+            display: inline-block;
+            margin-top: 1.8rem;
+            width: auto;
+            & > button {
+                background-image: linear-gradient(to right, #FF698D, #FB3F6C);
+                padding: 1rem 2rem;
+                border: 1px solid #FFFFFFCC;
+                border-radius: 192px;
                 font-family: Ubuntu;
                 font-size: 16px;
                 font-weight: 500;
                 line-height: 18.38px;
-                text-align: left;
+                letter-spacing: 0.02em;
+                text-align: center;
                 text-underline-position: from-font;
                 text-decoration-skip-ink: none;
-                color: #1A0C84;
-                margin-top: 1rem;
+                color: #FFFFFF;
+                text-wrap: nowrap;
+                cursor: pointer;
                 @media screen and (max-width: 800px) {
                     font-family: Ubuntu;
                     font-size: 12px;
-                    font-weight: 500;
+                    font-weight: 400;
                     line-height: 13.79px;
-                    text-align: left;
+                    letter-spacing: 0.02em;
+                    text-align: center;
                     text-underline-position: from-font;
                     text-decoration-skip-ink: none;
                 }
             }
             & > p {
                 font-family: Ubuntu;
-                font-size: 20px;
+                font-size: 13px;
                 font-weight: 400;
                 line-height: 36px;
                 text-align: left;
                 text-underline-position: from-font;
                 text-decoration-skip-ink: none;
-                color: #747582;
-                margin-top: 1rem;
-                letter-spacing: 0.2px;
-                @media screen and (min-width: 800px) and (max-width: 1240px) {
-                    font-size: 18px;
-                    line-height: 30px;
-                }
+                margin: auto;
+                color: #999999;
+                text-align: center;
+                margin-top: 0.3rem;
                 @media screen and (max-width: 800px) {
                     font-family: Ubuntu;
                     font-size: 12px;
-                    font-weight: 400;
-                    line-height: 18px;
-                    text-align: left;
-                    text-underline-position: from-font;
-                    text-decoration-skip-ink: none;
-                    letter-spacing: 0.3px;
-                }
-            }
-            .supercharge-box {
-                display: inline-block;
-                margin-top: 1.8rem;
-                width: auto;
-                & > button {
-                    background-image: linear-gradient(to right, #FF698D, #FB3F6C);
-                    padding: 1rem 2rem;
-                    border: 1px solid #FFFFFFCC;
-                    border-radius: 192px;
-                    font-family: Ubuntu;
-                    font-size: 16px;
                     font-weight: 500;
-                    line-height: 18.38px;
-                    letter-spacing: 0.02em;
-                    text-align: center;
-                    text-underline-position: from-font;
-                    text-decoration-skip-ink: none;
-                    color: #FFFFFF;
-                    text-wrap: nowrap;
-                    cursor: pointer;
-                    @media screen and (max-width: 800px) {
-                        font-family: Ubuntu;
-                        font-size: 12px;
-                        font-weight: 400;
-                        line-height: 13.79px;
-                        letter-spacing: 0.02em;
-                        text-align: center;
-                        text-underline-position: from-font;
-                        text-decoration-skip-ink: none;
-                    }
-                }
-                & > p {
-                    font-family: Ubuntu;
-                    font-size: 13px;
-                    font-weight: 400;
-                    line-height: 36px;
+                    line-height: 20px;
                     text-align: left;
                     text-underline-position: from-font;
                     text-decoration-skip-ink: none;
-                    margin: auto;
-                    color: #999999;
                     text-align: center;
-                    margin-top: 0.3rem;
-                    @media screen and (max-width: 800px) {
-                        font-family: Ubuntu;
-                        font-size: 12px;
-                        font-weight: 500;
-                        line-height: 20px;
-                        text-align: left;
-                        text-underline-position: from-font;
-                        text-decoration-skip-ink: none;
-                        text-align: center;
-                        margin-top: 0.1rem;
-                    }
+                    margin-top: 0.1rem;
                 }
             }
         }
-        .right-img {
-            display: block;
-            width: auto;
-            margin-top: -5rem;
-            @media screen and (max-width: 800px) {
-                display: none;
-            }
-        }
-        .right-img-mobile {
+    }
+    .right-img {
+        display: block;
+        width: auto;
+        margin-top: -5rem;
+        @media screen and (max-width: 800px) {
             display: none;
-            width: auto;
-            margin-top: 2rem;
-            @media screen and (max-width: 800px) {
-                display: block;
-            }
         }
-    `
+    }
+    .right-img-mobile {
+        display: none;
+        width: auto;
+        margin-top: 2rem;
+        @media screen and (max-width: 800px) {
+            display: block;
+        }
+    }
+`
+const Hero = () => {
     const handleScroll = (id: string) => {
         const section = document.getElementById(id);
         if (section) {
